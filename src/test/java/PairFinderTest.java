@@ -36,4 +36,11 @@ class PairFinderTest {
         assertTrue(() -> pf.isPair(numbers, value));
     }
 
+    @Test
+    void testIfPairFinderThrowsException() {
+        int[] numbers = {1};
+        int value = 66;
+
+        assertThrows(IllegalArgumentException.class, () -> pf.isPair(numbers, value));
+    }
 }

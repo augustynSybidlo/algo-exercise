@@ -8,7 +8,9 @@ import java.util.Set;
 
 public class PairFinder {
 
-    public boolean isPair(int[] numbers, int value) {
+    public boolean isPair(int[] numbers, int value) throws IllegalArgumentException {
+        if (numbers.length < 2) throw new IllegalArgumentException();
+
         Set<Integer> numbersMap = new HashSet<>();
 
         for (int num : numbers) {
