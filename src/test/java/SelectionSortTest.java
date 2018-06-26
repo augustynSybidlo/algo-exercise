@@ -21,5 +21,14 @@ class SelectionSortTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void testIfSortMethodWorksOnArrayWithLengthLessThanTwo() {
+        int[] array = {6};
+        String expected = "6";
+        String actual = ss.sort(array);
+
+        assertEquals(expected, actual);
+    }
+
 
 }
