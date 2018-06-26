@@ -12,6 +12,17 @@ class PermutationTest {
         this.permutation = new Permutation();
     }
 
+    @Test
+    void testPermutationWhenStringAreSame() {
+        String str1 = "abcd";
+        String str2 = "abcd";
+        assertTrue(() -> permutation.isPermutation(str1, str2));
+    }
 
-
+    @Test
+    void testPermutationWhenStringAreDifferent() {
+        String str1 = "efgh";
+        String str2 = "abcd";
+        assertFalse(() -> permutation.isPermutation(str1, str2));
+    }
 }
