@@ -25,4 +25,13 @@ class PermutationTest {
         String str2 = "abcd";
         assertFalse(() -> permutation.isPermutation(str1, str2));
     }
+
+    @Test
+    void testPermutationWhenStringAreSimilar() {
+        String str1 = "dcab";
+        String str2 = "abcd";
+        assertTrue(() -> permutation.isPermutation(str1, str2));
+    }
+
+
 }
