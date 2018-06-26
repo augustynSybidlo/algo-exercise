@@ -33,5 +33,19 @@ class PermutationTest {
         assertTrue(() -> permutation.isPermutation(str1, str2));
     }
 
+    @Test
+    void testPermutationWhenStringAreDifferentByLetterCase() {
+        String str1 = "ABCD";
+        String str2 = "abcd";
+        assertFalse(() -> permutation.isPermutation(str1, str2));
+    }
+
+    @Test
+    void testPermutationWhenStringAreSameByLetterCase() {
+        String str1 = "ABCD";
+        String str2 = "DBCA";
+        assertTrue(() -> permutation.isPermutation(str1, str2));
+    }
+
 
 }
