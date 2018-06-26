@@ -30,5 +30,14 @@ class SelectionSortTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void testIfSortMethodWorksOnEmptyArray() {
+        int[] array = new int[5];
+        String expected = "00000";
+        String actual = ss.sort(array);
+
+        assertEquals(expected, actual);
+    }
+
 
 }
