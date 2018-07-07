@@ -1,13 +1,17 @@
 /*
-StringCompressor example:
+algorithms.StringCompressor example:
 "aaabbccc" -> "a3b2c3"
 "aaabc" -> "a3bc"
  */
+
+package algorithms;
 
 
 public class StringCompressor {
 
     public String compressString(String text) {
+        if(text.length() == 0) return text;
+
         int counter = 1;
         char lastChar = text.charAt(0);
         StringBuilder sb = new StringBuilder();

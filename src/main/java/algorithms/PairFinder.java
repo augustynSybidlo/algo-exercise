@@ -1,4 +1,4 @@
-/*
+package algorithms;/*
 Method of this class find pair which can sum up
 to certain value.
  */

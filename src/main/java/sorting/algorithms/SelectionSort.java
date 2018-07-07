@@ -2,6 +2,8 @@
 Selection sort algorithm for array on numbers.
  */
 
+package sorting.algorithms;
+
 public class SelectionSort {
 
    public String sort(int[] numbers) {

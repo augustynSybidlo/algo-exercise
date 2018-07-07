@@ -1,3 +1,5 @@
+package algorithms;
+
 public class FindProductOfIntegers { // find highest product of two integers
 
     public int findMaxProductOfTwoIntegers(int[] arr) throws IllegalArgumentException {
